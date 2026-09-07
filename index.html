@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal de ports para Android: lançamentos, jogos selecionados e links oficiais.">
+  <title>PORTS MOBILE — PC no bolso</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ports Mobile">
+      <span class="brand-mark">PM</span>
+      <span>PORTS<span>MOBILE</span></span>
+    </a>
+    <nav>
+      <a href="#lancamentos">Lançamentos</a>
+      <a href="#jogos">Jogos</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">ANDROID • PC → MOBILE</div>
+        <h1>SEU PC.<br><em>NO BOLSO.</em></h1>
+        <p>Descubra ports de jogos de PC que chegaram ao Android, com informações organizadas e links para as páginas oficiais.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#lancamentos">VER LANÇAMENTOS ↓</a>
+          <a class="btn ghost" href="#sobre">COMO FUNCIONA?</a>
+        </div>
+      </div>
+      <div class="phone-card" aria-hidden="true">
+        <div class="phone">
+          <div class="screen">
+            <span class="screen-tag">PORT</span>
+            <div class="screen-title">PC<br><b>→</b><br>MOBILE</div>
+            <div class="screen-grid">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" id="lancamentos">
+      <span>⚡ NOVOS PORTS</span>
+      <b>JOGOS DE PC CHEGANDO AO ANDROID</b>
+      <span>⚡ ATUALIZADO</span>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <span class="kicker">EM DESTAQUE</span>
+          <h2>Lançamentos recentes</h2>
+        </div>
+        <span class="count" id="count">0 jogos</span>
+      </div>
+      <div class="featured" id="featured"></div>
+    </section>
+
+    <section class="section" id="jogos">
+      <div class="section-head">
+        <div>
+          <span class="kicker">CATÁLOGO</span>
+          <h2>Encontre seu próximo jogo</h2>
+        </div>
+      </div>
+
+      <div class="filters">
+        <label class="search">
+          <span>⌕</span>
+          <input id="search" type="search" placeholder="Pesquisar jogo..." autocomplete="off">
+        </label>
+        <div class="chips" id="chips">
+          <button class="chip active" data-filter="todos">Todos</button>
+          <button class="chip" data-filter="terror">Terror</button>
+          <button class="chip" data-filter="acao">Ação</button>
+          <button class="chip" data-filter="puzzle">Puzzle</button>
+          <button class="chip" data-filter="fps">FPS</button>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>Nenhum jogo encontrado. Tente outro nome ou gênero.</div>
+    </section>
+
+    <section class="how section" id="sobre">
+      <div>
+        <span class="kicker">A IDEIA</span>
+        <h2>Ports, sem bagunça.</h2>
+        <p>O portal organiza lançamentos e jogos selecionados para você descobrir versões mobile de títulos que vieram do PC.</p>
+      </div>
+      <div class="steps">
+        <article><strong>01</strong><span>Descubra</span><p>Veja o que acabou de chegar ao Android.</p></article>
+        <article><strong>02</strong><span>Compare</span><p>Confira gênero e informações rápidas.</p></article>
+        <article><strong>03</strong><span>Acesse</span><p>Abra o link oficial do jogo.</p></article>
+      </div>
+    </section>
+
+    <section class="notice">
+      <span>⚠</span>
+      <p><b>Links oficiais:</b> este modelo aponta para páginas oficiais/Google Play. Se você tiver autorização para distribuir um APK diretamente, troque o campo <code>link</code> no arquivo <code>script.js</code> pelo endereço autorizado.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand small"><span class="brand-mark">PM</span><span>PORTS<span>MOBILE</span></span></div>
+    <p>PC → Android • Feito para quem gosta de jogar no bolso.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
